@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: rgb(187, 239, 15);">
     <header style="Background-color: lightblue; padding: 20px; text-align: center;">
         <h1>Sistem Pendaftaran Murid Baru</h1>
         <nav>
@@ -24,12 +24,12 @@
                     <input type="text" id="name" name="name" required><br><br>
                     <label for="date-of-birth">Tanggal Lahir:</label>
                     <input type="date" id="date-of-birth" name="date-of-birth" required><br><br>
-                    <label for="address">Alamat Tinggal Saat ini:</label>
-                    <input type="text" id="address" name="address" required><br><br>
+                    <label for="address">Alamat:</label>
+                    <input type="text" id="address" name="address" required placeholder="Alamat Tinggal Saat ini"><br><br>
                     <label for="phone">No. Telepon:</label>
-                    <input type="tel" id="phone" name="phone" required><br><br>
+                    <input type="tel" id="phone" name="phone" required placeholder="Boleh juga yang ada WhatAppnya"><br><br>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
+                    <input type="email" id="email" name="email" required placeholder="contohnya namaemail@gmail.com"><br><br>
                     <label for="gender">Jenis Kelamin:</label>
                     <input type="radio" id="gender" name="gender" required> Laki-laki
                     <input type="radio" id="gender" name="gender" required> Perempuan<br><br>
@@ -42,21 +42,52 @@
                         <option value="buddhism">Buddha</option>
                         <option value="confucianism">Konghucu</option>
                     </select><br><br>
-                    <label for="previous-school">Asal Sekolah:</label>
-                    <input type="text" id="previous-school" name="previous-school" required><br><br>
-                    <label for="national-id">No. KTP/SIM:</label>
-                    <input type="text" id="national-id" name="national-id" required><br><br>    
-                    <label for="father-name">Nama Ayah</label>
+                    <label for="father-name">Nama Ayah:</label>
                     <input type="text" id="father-name" name="father-name" required><br><br>
-                    <label for="mother-name">Nama Ibu</label>
+                    <label for="mother-name">Nama Ibu:</label>
                     <input type="text" id="mother-name" name="mother-name" required><br><br>
                     <label for="parents-phone">No. Telepon Orang Tua:</label>
                     <input type="tel" id="parents-phone" name="parents-phone" required><br><br>
-                    
-                </fieldset>
-                <fieldset></fieldset>
-                <fieldset></fieldset>
+                </fieldset>            
             </section>
+            <section id="academic">
+                <fieldset>
+                    <legend><strong>Data Pendidikan</strong></legend>
+                    <label for="previous-school">Asal Sekolah:</label>
+                    <input type="text" id="previous-school" name="previous-school" required><br><br>
+                    <label for="no_ijazah_or_SKL">No Ijazah/SKL</label>
+                    <input type="text" id="no_ijazah_or_SKL" name="no_ijazah_or_SKL" required><br><br>
+                    <label for="year-of-graduation">Tahun Lulus:</label>
+                    <input type="number" id="year-of-graduation" name="year-of-graduation" required><br><br>
+                    <label for="previous-school-address">Alamat Sekolah Asal:</label>
+                    <input type="text" id="previous-school-address" name="previous-school-address" required><br><br>
+                    <label for="average-score">Rata-rata Nilai:</label>
+                    <input type="number" id="average-score" name="average-score" step="0.01" required><br><br>
+                </fieldset>
+            </section>
+            <section id="major-selection">
+                <fieldset>
+                    <legend><strong>Pilihan jurusan</strong></legend>
+                    <label for="major">Pilih Program Studi:</label>
+                    <select id="major" name="major" required>
+                        <option value="Graphics-design">Desain Komunikasi Visual (DKV)</option>
+                        <option value="Culinary">Kuliner (KLR)</option>
+                        <option value="Fashion-Design">Desain Produksi Busana (DPB)</option>
+                        <option value="Marketing">Bisnis Retail (BRT)</option>
+                        <option value="Accounting">Akuntansi (AKT)</option>
+                    </select><br><br>
+                    <label for="jalur-pendaftaran">Pilih Jalur Pendaftaran:</label>
+                    <select name="jalur-pendaftaran" id="jalur-pendaftaran" required>
+                        <option value="Afirmasi">Afirmasi</option>
+                        <option value="Prestasi">Prestasi</option>
+                        <option value="Zonasi">Zonasi</option>
+                        <option value="Reguler">Reguler</option>
+                    </select>
+                </fieldset>
+            </section>
+            <br>
+            <input type="submit" value="Daftar Sekarang"> 
+            <input type="reset" value="Reset Form">                  
         </form>
     </main>
 </body>
