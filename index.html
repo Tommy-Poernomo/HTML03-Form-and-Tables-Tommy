@@ -3,36 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPMB</title>
+    <title>Pendaftaran SPMB</title>
 </head>
-<body style="background-color: rgb(187, 239, 15);">
-    <header style="Background-color: lightblue; padding: 20px; text-align: center;">
-        <h1>Sistem Pendaftaran Murid Baru</h1>
-        <nav>
-            <a href="#personal-information">Data Pribadi</a>
-            <a href="#academic">Data Pendidikan</a>
-            <a href="#major-selection">Pilihan Jurusan</a>
-        </nav>
+<body style="margin:0; font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background: linear-gradient(180deg,#e8f7d1 0%, #c8ed86 100%); color:#222;">
+    <header style="background: linear-gradient(90deg,#3aa0ff,#6bd6ff); padding:18px 12px; box-shadow:0 4px 18px rgba(0,0,0,0.12);">
+        <h1 style="margin:0; font-size:1.25rem; color:#04263f;">Sistem Pendaftaran Murid Baru</h1>
+        <div style="font-size:0.85rem; color:#03314a90;">Formulir pendaftaran online</div>
+            <nav aria-label="Main Navigation" style="display:flex; gap:10px; flex-wrap:wrap;">
+                <a href="#personal-information" style="text-decoration:none; background:rgba(255,255,255,0.18); padding:8px 12px; color:#04263f; border-radius:8px;">Data Pribadi</a>
+                <a href="#academic" style="text-decoration:none; background:rgba(255,255,255,0.18); padding:8px 12px; color:#04263f; border-radius:8px;">Data Pendidikan</a>
+                <a href="#major-selection" style="text-decoration:none; background:rgba(255,255,255,0.18); padding:8px 12px; color:#04263f; border-radius:8px;">Pilihan Jurusan</a>
+            </nav>
     </header>
     <main style="padding: 50px;">
-        <form action="" method="post">
+        <form action="" method="post" style="background:#fff; border-radius:12px; padding:22px; box-shadow:0 10px 30px rgba(12,40,60,0.08);">
             <section id="personal-information">
                 <fieldset style="padding: 40px;">
                     <legend><strong>Data Pribadi</strong></legend>
-                    <label for="name">Nama Lengkap:</label>
-                    <input type="text" id="name" name="name" required><br><br>
-                    <label for="date-of-birth">Tanggal Lahir:</label>
-                    <input type="date" id="date-of-birth" name="date-of-birth" required><br><br>
-                    <label for="address">Alamat:</label>
-                    <input type="text" id="address" name="address" required placeholder="Alamat Tinggal Saat ini"><br><br>
-                    <label for="phone">No. Telepon:</label>
-                    <input type="tel" id="phone" name="phone" required placeholder="Boleh juga yang ada WhatAppnya"><br><br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required placeholder="contohnya namaemail@gmail.com"><br><br>
-                    <label for="gender">Jenis Kelamin:</label>
+                    <label for="name">Nama Lengkap:</label><br>
+                    <input type="text" id="name" name="name" required style="width:100%; padding:10px 12px; border:1px solid #cfe6f2; border-radius:8px;"><br><br>
+                    <label for="date-of-birth">Tanggal Lahir:</label><br>
+                    <input type="date" id="date-of-birth" name="date-of-birth" required style="width:100%; padding:10px 12px; border:1px solid #cfe6f2; border-radius:8px;"><br><br>
+                    <label for="address">Alamat:</label><br>
+                    <input type="text" id="address" name="address" required placeholder="Alamat Tinggal Saat ini" style="width:100%; padding:10px 12px; border:1px solid #cfe6f2; border-radius:8px;"><br><br>
+                    <label for="phone">No. Telepon:</label><br>
+                    <input type="tel" id="phone" name="phone" required placeholder="Boleh juga yang ada WhatAppnya" style="width:100%; padding:10px 12px; border:1px solid #cfe6f2; border-radius:8px;"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="contohnya namaemail@gmail.com" style="width:100%; padding:10px 12px; border:1px solid #cfe6f2; border-radius:8px;"><br><br>
+                    <label for="gender">Jenis Kelamin:</label><br>
                     <input type="radio" id="gender" name="gender" required> Laki-laki
                     <input type="radio" id="gender" name="gender" required> Perempuan<br><br>
-                    <label for="religion">Agama:</label>
+                    <label for="religion">Agama:</label><br>
                     <select id="religion" name="religion" required>
                         <option value="islam">Islam</option>
                         <option value="christianity">Kristen</option>
@@ -46,29 +47,29 @@
                     <input type="checkbox" name="Basket-ball" id="Basket-ball">Bola Basket<br><br>
                     <input type="checkbox" name="Swimming" id="Swimming">Renang<br><br>
                     <input type="checkbox" name="Reading" id="Reading">   Membaca<br><br>
-                    <label for="father-name">Nama Ayah:</label>
-                    <input type="text" id="father-name" name="father-name" required><br><br>
-                    <label for="mother-name">Nama Ibu:</label>
-                    <input type="text" id="mother-name" name="mother-name" required><br><br>
-                    <label for="parents-phone">No. Telepon Orang Tua:</label>
-                    <input type="tel" id="parents-phone" name="parents-phone" required><br><br>
-                    <label for="your-family">Keadaan Keluargamu:</label>
-                    <textarea id="your-family" name="your-family" rows="4" cols="50" placeholder="Tuliskan secara Singkat Keadaan Keluargamu" required></textarea><br><br>
+                    <label for="father-name">Nama Ayah:</label><br>
+                    <input type="text" id="father-name" name="father-name" required style="width:100%; padding:10px 12px; border:1px solid #cfe6f2; border-radius:8px;"><br><br>
+                    <label for="mother-name">Nama Ibu:</label><br>
+                    <input type="text" id="mother-name" name="mother-name" required style="width:100%; padding:10px 12px; border:1px solid #cfe6f2; border-radius:8px;"><br><br>
+                    <label for="parents-phone">No. Telepon Orang Tua:</label><br>
+                    <input type="tel" id="parents-phone" name="parents-phone" required style="width:100%; padding:10px 12px; border:1px solid #cfe6f2; border-radius:8px;"><br><br>
+                    <label for="your-family">Keadaan Keluargamu:</label><br>
+                    <textarea id="your-family" name="your-family" rows="4" cols="50" placeholder="Tuliskan secara Singkat Keadaan Keluargamu" required style="width:100%; padding:10px; border:1px solid #cfe6f2; border-radius:8px;"></textarea><br><br>
                 </fieldset>            
             </section>
             <section id="academic">
                 <fieldset>
                     <legend><strong>Data Pendidikan</strong></legend>
-                    <label for="previous-school">Asal Sekolah:</label>
-                    <input type="text" id="previous-school" name="previous-school" required><br><br>
-                    <label for="no_ijazah_or_SKL">No Ijazah/SKL</label>
-                    <input type="text" id="no_ijazah_or_SKL" name="no_ijazah_or_SKL" required><br><br>
-                    <label for="year-of-graduation">Tahun Lulus:</label>
-                    <input type="date" min="2021-07-01" max="2025-07-01" id="year-of-graduation" name="year-of-graduation" required><br><br>
-                    <label for="previous-school-address">Alamat Sekolah Asal:</label>
-                    <input type="text" id="previous-school-address" name="previous-school-address" required><br><br>
-                    <label for="average-score">Rata-rata Nilai:</label>
-                    <input type="number" id="average-score" name="average-score" step="0.01" required><br><br>
+                    <label for="previous-school">Asal Sekolah:</label><br>
+                    <input type="text" id="previous-school" name="previous-school" required style="width:100%; padding:10px 12px; border:1px solid #cfe6f2; border-radius:8px;"><br><br>
+                    <label for="no_ijazah_or_SKL">No Ijazah/SKL</label><br>
+                    <input type="text" id="no_ijazah_or_SKL" name="no_ijazah_or_SKL" required style="width:100%; padding:10px 12px; border:1px solid #cfe6f2; border-radius:8px;"><br><br>
+                    <label for="year-of-graduation">Tahun Lulus:</label><br>
+                    <input type="date" min="2021-07-01" max="2025-07-01" id="year-of-graduation" name="year-of-graduation" required style="width:100%; padding:10px 12px; border:1px solid #cfe6f2; border-radius:8px;"><br><br>
+                    <label for="previous-school-address">Alamat Sekolah Asal:</label><br>
+                    <input type="text" id="previous-school-address" name="previous-school-address" required style="width:100%; padding:10px 12px; border:1px solid #cfe6f2; border-radius:8px;"><br><br>
+                    <label for="average-score">Rata-rata Nilai:</label><br>
+                    <input type="number" id="average-score" name="average-score" step="0.01" required style="width:100%; padding:10px 12px; border:1px solid #cfe6f2; border-radius:8px;"><br><br>
                     <label for="photo">Upload Foto Diri:</label>
                     <input type="file" name="photo" id="photo" accept="image/png, image/jpeg" required><br><br>
                 </fieldset>
@@ -76,7 +77,7 @@
             <section id="major-selection">
                 <fieldset>
                     <legend><strong>Pilihan jurusan</strong></legend>
-                    <label for="major">Pilih Program Studi:</label>
+                    <label for="major">Pilih Program Studi:</label><br>
                     <select id="major" name="major" required>
                         <option value="Graphics-design">Desain Komunikasi Visual (DKV)</option>
                         <option value="Culinary">Kuliner (KLR)</option>
@@ -84,7 +85,7 @@
                         <option value="Marketing">Bisnis Retail (BRT)</option>
                         <option value="Accounting">Akuntansi (AKT)</option>
                     </select><br><br>
-                    <label for="jalur-pendaftaran">Pilih Jalur Pendaftaran:</label>
+                    <label for="jalur-pendaftaran">Pilih Jalur Pendaftaran:</label><br>
                     <select name="jalur-pendaftaran" id="jalur-pendaftaran" required>
                         <option value="Afirmasi">Afirmasi</option>
                         <option value="Prestasi">Prestasi</option>
